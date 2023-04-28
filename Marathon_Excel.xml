@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Suite" verbose="5">
+  <test name="On Chrome" parallel="tests">
+<parameter name="Browser" value="Chrome" />
+  <parameter name="urL" value="https://login.salesforce.com/" />
+  <parameter name="uname" value="anitharaj@zigma.com" />
+  <parameter name="pwd" value="September@21" />
+ 
+    <classes>
+      <class name="marathonTestNg.QuestionSalesForce"/>
+    </classes>
+      </test> <!-- Test -->
+      <test name="On Edge" parallel="tests">
+<parameter name="Browser" value="Edge" />
+  <parameter name="urL" value="https://login.salesforce.com/" />
+  <parameter name="uname" value="anitharaj@zigma.com" />
+  <parameter name="pwd" value="September@21" />
+ 
+    <classes>
+      <class name="marathonTestNg.QuestionSalesForce"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+ 
